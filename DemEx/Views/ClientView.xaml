@@ -11,7 +11,7 @@
         <CollectionViewSource x:Key="clientViewSource" d:DesignSource="{d:DesignInstance {x:Type Models:Client}, CreateList=True}"/>
     </Window.Resources>
     <Grid DataContext="{StaticResource clientViewSource}">
-        <TextBox x:Name="SearchTb" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,9.667,0" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="hTb" Width="120" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,0,9.667,0" TextChanged="TextBox_TextChanged"/>
         <DataGrid x:Name="clientDataGrid" RowDetailsVisibilityMode="VisibleWhenSelected" IsReadOnly="True" Margin="0,34,0.667,77" ItemsSource="{Binding}" EnableRowVirtualization="True" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTemplateColumn x:Name="birthdayColumn" Width="*" Header="Birthday">
